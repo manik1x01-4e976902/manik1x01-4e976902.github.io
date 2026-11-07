@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5,viewport-fit=cover">
+<title>茄子短视频-短剧微短剧在线观看_热门短剧推荐平台</title>
+<meta name="description" content="茄子短视频汇聚海量热门短剧、微短剧与竖屏内容，提供最新短剧推荐、分类榜单、追更指南与深度解析。2026年11月7日更新，涵盖甜宠、逆袭、悬疑等题材，帮你快速找到下饭好剧。">
+<meta name="keywords" content="茄子短视频,短剧在线观看,微短剧推荐,热门短剧,竖屏短剧">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%237c3aed'/%3E%3Ctext x='50' y='70' font-size='58' text-anchor='middle' fill='%23fde68a' font-family='sans-serif'%3E🍆%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --eggplant:#6b2fa0;
+  --eggplant-light:#8b5cf6;
+  --eggplant-soft:#f5f0ff;
+  --accent:#f59e0b;
+  --accent-soft:#fff7e6;
+  --ink:#1e1b2e;
+  --ink-soft:#4b4566;
+  --muted:#7b7691;
+  --line:#ece8f5;
+  --bg:#faf9fd;
+  --card:#ffffff;
+  --radius:18px;
+  --radius-sm:12px;
+  --shadow:0 4px 20px rgba(107,47,160,.08);
+  --shadow-hover:0 10px 32px rgba(107,47,160,.16);
+  --max:1200px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  background:var(--bg);color:var(--ink);line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+.sec{padding:56px 0}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:28px;flex-wrap:wrap}
+.sec-head h2{font-size:26px;letter-spacing:-.5px;position:relative;padding-left:16px}
+.sec-head h2::before{content:"";position:absolute;left:0;top:6px;bottom:6px;width:5px;border-radius:4px;background:linear-gradient(180deg,var(--eggplant-light),var(--accent))}
+.sec-head .sub{color:var(--muted);font-size:14px}
+.more-link{font-size:14px;color:var(--eggplant);font-weight:600;border-bottom:1px dashed var(--eggplant-light);padding-bottom:2px;white-space:nowrap}
+.more-link:hover{color:var(--accent)}
+
+/* ===== 顶部导航 ===== */
+.topbar{position:sticky;top:0;z-index:50;background:rgba(250,249,253,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;gap:20px;height:66px}
+.logo{display:flex;align-items:center;gap:9px;font-weight:800;font-size:20px;letter-spacing:-.5px;color:var(--ink)}
+.logo .mark{width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,var(--eggplant) 0%,var(--eggplant-light) 100%);display:grid;place-items:center;font-size:20px;box-shadow:0 4px 12px rgba(107,47,160,.3)}
+.logo em{font-style:normal;color:var(--eggplant)}
+.nav-links{display:flex;gap:4px;margin-left:8px;flex-wrap:wrap}
+.nav-links a{font-size:14.5px;padding:8px 12px;border-radius:10px;color:var(--ink-soft);font-weight:500;transition:.2s}
+.nav-links a:hover{background:var(--eggplant-soft);color:var(--eggplant)}
+.nav-search{margin-left:auto;display:flex;align-items:center;background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 6px 6px 16px;box-shadow:var(--shadow)}
+.nav-search input{border:0;outline:0;background:transparent;font-size:14px;width:150px;color:var(--ink)}
+.nav-search button{border:0;cursor:pointer;background:var(--eggplant);color:#fff;border-radius:999px;padding:7px 16px;font-size:13.5px;font-weight:600}
+.menu-toggle{display:none;border:0;background:var(--eggplant-soft);color:var(--eggplant);font-size:16px;padding:8px 12px;border-radius:10px;cursor:pointer}
+
+/* ===== Banner ===== */
+.hero{position:relative;overflow:hidden;background:
+  radial-gradient(circle at 82% 18%,rgba(245,158,11,.16),transparent 42%),
+  radial-gradient(circle at 8% 88%,rgba(139,92,246,.18),transparent 46%),
+  linear-gradient(135deg,#fbf8ff 0%,#f4edff 100%);
+  border-bottom:1px solid var(--line);
+}
+.hero::after{content:"";position:absolute;right:-90px;top:-90px;width:320px;height:320px;border-radius:50%;border:36px solid rgba(139,92,246,.08)}
+.hero-inner{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center;padding:64px 0 60px;position:relative;z-index:1}
+.hero h1{font-size:clamp(30px,4.2vw,46px);line-height:1.22;letter-spacing:-1.2px;font-weight:800}
+.hero h1 span{background:linear-gradient(120deg,var(--eggplant),var(--eggplant-light) 55%,var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:13px;color:var(--eggplant);font-weight:600;margin-bottom:18px;box-shadow:var(--shadow)}
+.hero-tag .dot{width:7px;height:7px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 4px rgba(34,197,94,.18)}
+.hero p.lead{color:var(--ink-soft);font-size:16px;margin-top:18px;max-width:560px}
+.hero-search{margin-top:26px;display:flex;align-items:center;background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 7px 7px 20px;max-width:480px;box-shadow:var(--shadow)}
+.hero-search input{border:0;outline:0;flex:1;font-size:15px;background:transparent;color:var(--ink)}
+.hero-search button{border:0;cursor:pointer;background:linear-gradient(135deg,var(--eggplant),var(--eggplant-light));color:#fff;font-weight:700;padding:10px 24px;border-radius:999px;font-size:14.5px}
+.hero-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.hero-btns a{font-size:13.5px;font-weight:600;background:#fff;border:1px solid var(--line);padding:9px 16px;border-radius:11px;color:var(--ink-soft);box-shadow:var(--shadow);transition:.2s}
+.hero-btns a:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover);color:var(--eggplant);border-color:var(--eggplant-light)}
+.hero-visual{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.poster{border-radius:var(--radius);aspect-ratio:3/4;display:flex;flex-direction:column;justify-content:flex-end;padding:14px;color:#fff;position:relative;overflow:hidden;box-shadow:var(--shadow);font-size:13px;font-weight:600;line-height:1.35}
+.poster::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(20,10,40,.75))}
+.poster span{position:relative;z-index:1}
+.poster:nth-child(1){background:linear-gradient(150deg,#8b5cf6,#4c1d95)}
+.poster:nth-child(2){background:linear-gradient(150deg,#f59e0b,#b45309);margin-top:26px}
+.poster:nth-child(3){background:linear-gradient(150deg,#ec4899,#831843);margin-top:-14px}
+.poster:nth-child(4){background:linear-gradient(150deg,#14b8a6,#0f766e);margin-top:12px}
+
+/* ===== 快捷分类 ===== */
+.cat-grid{display:grid;grid-template-columns:repeat(8,1fr);gap:12px}
+.cat-item{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-sm);padding:18px 10px;text-align:center;box-shadow:var(--shadow);transition:.22s;font-size:14px;font-weight:600;color:var(--ink-soft)}
+.cat-item .ico{font-size:22px;display:block;margin-bottom:6px}
+.cat-item:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover);color:var(--eggplant);border-color:var(--eggplant-light)}
+
+/* ===== 卡片通用 ===== */
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow);transition:.22s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover)}
+.card .cover{border-radius:var(--radius-sm);height:132px;margin-bottom:14px;display:grid;place-items:center;color:#fff;font-weight:800;font-size:17px;letter-spacing:.5px;text-shadow:0 2px 8px rgba(0,0,0,.25);position:relative;overflow:hidden}
+.cover.c1{background:linear-gradient(140deg,#8b5cf6,#5b21b6)}
+.cover.c2{background:linear-gradient(140deg,#f59e0b,#b45309)}
+.cover.c3{background:linear-gradient(140deg,#ec4899,#9d174d)}
+.cover.c4{background:linear-gradient(140deg,#06b6d4,#0e7490)}
+.cover.c5{background:linear-gradient(140deg,#84cc16,#3f6212)}
+.cover.c6{background:linear-gradient(140deg,#f43f5e,#881337)}
+.cover.c7{background:linear-gradient(140deg,#6366f1,#312e81)}
+.cover.c8{background:linear-gradient(140deg,#eab308,#854d0e)}
+.card h3{font-size:16.5px;line-height:1.4;margin-bottom:8px}
+.card .tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.tag{font-size:11.5px;padding:3px 9px;border-radius:999px;background:var(--eggplant-soft);color:var(--eggplant);font-weight:600}
+.tag.warm{background:var(--accent-soft);color:#b45309}
+.card .desc{font-size:13.5px;color:var(--muted);flex:1;margin-bottom:12px}
+.card .meta{display:flex;justify-content:space-between;font-size:12.5px;color:var(--muted);border-top:1px dashed var(--line);padding-top:10px}
+.card .meta b{color:var(--eggplant);font-weight:700}
+
+/* ===== 更新列表 ===== */
+.update-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.upd-item{display:flex;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius-sm);padding:14px 16px;box-shadow:var(--shadow);transition:.2s;align-items:center}
+.upd-item:hover{transform:translateX(4px);border-color:var(--eggplant-light)}
+.upd-no{flex:0 0 42px;height:42px;border-radius:12px;background:var(--eggplant-soft);color:var(--eggplant);display:grid;place-items:center;font-weight:800;font-size:14px}
+.upd-item .t{font-weight:700;font-size:14.5px;margin-bottom:2px}
+.upd-item .s{font-size:12.5px;color:var(--muted)}
+.upd-item .time{margin-left:auto;font-size:12px;color:var(--accent);font-weight:700;white-space:nowrap}
+
+/* ===== 深度解析 ===== */
+.article-box{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:38px 42px;box-shadow:var(--shadow)}
+.article-box h3{font-size:19px;margin:26px 0 12px;color:var(--eggplant)}
+.article-box h3:first-child{margin-top:0}
+.article-box p{color:var(--ink-soft);font-size:15px;margin-bottom:14px;text-align:justify}
+.article-box .quote{background:var(--eggplant-soft);border-left:4px solid var(--eggplant-light);padding:16px 20px;border-radius:0 12px 12px 0;font-size:14.5px;color:var(--eggplant);margin:18px 0}
+
+/* ===== 体验指南 ===== */
+.guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.guide-item{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);transition:.2s}
+.guide-item:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+.guide-item .num{font-size:13px;font-weight:800;color:var(--accent);letter-spacing:1px;margin-bottom:8px}
+.guide-item h4{font-size:16px;margin-bottom:8px}
+.guide-item p{font-size:13.5px;color:var(--muted)}
+
+/* ===== FAQ ===== */
+.faq-list{display:grid;gap:12px}
+.faq-item{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-sm);padding:20px 24px;box-shadow:var(--shadow);transition:.2s}
+.faq-item:hover{border-color:var(--eggplant-light)}
+.faq-item h4{font-size:15.5px;display:flex;gap:10px;color:var(--ink);margin-bottom:8px}
+.faq-item h4 .q{color:var(--eggplant-light);font-weight:800}
+.faq-item p{font-size:14px;color:var(--ink-soft)}
+
+/* ===== 评论 ===== */
+.comment-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.cmt{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-sm);padding:16px 18px;box-shadow:var(--shadow);transition:.2s}
+.cmt:hover{border-color:var(--eggplant-light)}
+.cmt-head{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.avatar{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-weight:800;color:#fff;font-size:14px;flex-shrink:0}
+.av1{background:linear-gradient(135deg,#8b5cf6,#6d28d9)}
+.av2{background:linear-gradient(135deg,#f59e0b,#b45309)}
+.av3{background:linear-gradient(135deg,#ec4899,#9d174d)}
+.av4{background:linear-gradient(135deg,#14b8a6,#0f766e)}
+.av5{background:linear-gradient(135deg,#6366f1,#312e81)}
+.av6{background:linear-gradient(135deg,#84cc16,#3f6212)}
+.cmt-name{font-size:13.5px;font-weight:700}
+.cmt-time{font-size:11.5px;color:var(--muted);margin-left:auto}
+.cmt p{font-size:13.5px;color:var(--ink-soft)}
+.cmt .like{font-size:11.5px;color:var(--muted);margin-top:8px;display:flex;gap:12px}
+
+/* ===== 资讯 ===== */
+.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.news-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow);transition:.2s;display:flex;flex-direction:column}
+.news-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+.news-card .date{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:10px}
+.news-card h4{font-size:16px;line-height:1.45;margin-bottom:10px}
+.news-card p{font-size:13.5px;color:var(--muted);flex:1}
+
+/* ===== 页脚 ===== */
+footer{background:#1e1b2e;color:#c9c4dc;padding:50px 0 26px;margin-top:20px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;margin-bottom:36px}
+.foot-brand .logo{color:#fff;margin-bottom:14px}
+.foot-brand p{font-size:13.5px;color:#918ca8;max-width:300px}
+.foot-col h5{color:#fff;font-size:14px;margin-bottom:14px;letter-spacing:.5px}
+.foot-col a{display:block;font-size:13.5px;color:#918ca8;margin-bottom:9px;transition:.2s}
+.foot-col a:hover{color:var(--accent)}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12.5px;color:#7b7691}
+.disclaimer{font-size:12px;color:#6b6685;margin-top:12px;line-height:1.7;max-width:760px}
+
+@media(max-width:980px){
+  .hero-inner{grid-template-columns:1fr;padding:46px 0 40px}
+  .hero-visual{max-width:420px}
+  .cat-grid{grid-template-columns:repeat(4,1fr)}
+  .grid-3,.grid-4,.news-grid,.guide-grid{grid-template-columns:repeat(2,1fr)}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .article-box{padding:28px 24px}
+}
+@media(max-width:640px){
+  .nav-links,.nav-search{display:none}
+  .menu-toggle{display:block;margin-left:auto}
+  .cat-grid{grid-template-columns:repeat(4,1fr)}
+  .grid-3,.grid-4,.news-grid,.guide-grid,.comment-grid,.update-list{grid-template-columns:1fr}
+  .hero-visual{grid-template-columns:1fr 1fr;max-width:100%}
+  .sec{padding:40px 0}
+  .foot-grid{grid-template-columns:1fr}
+  .sec-head h2{font-size:22px}
+}
+</style>
+</head>
+<body>
+
+<!-- 顶部导航 -->
+<header class="topbar">
+  <div class="wrap nav">
+    <a href="/#home" class="logo"><span class="mark">🍆</span>茄子<em>短视频</em></a>
+    <nav class="nav-links">
+      <a href="/#hot">热门推荐</a>
+      <a href="/#latest">最新更新</a>
+      <a href="/#category">分类入口</a>
+      <a href="/#deep">深度解析</a>
+      <a href="/#faq">常见问题</a>
+      <a href="/#news">短剧资讯</a>
+    </nav>
+    <form class="nav-search" onsubmit="return false">
+      <input type="text" placeholder="搜索短剧、题材、演员…" aria-label="搜索">
+      <button type="button">搜索</button>
+    </form>
+    <button class="menu-toggle" aria-label="菜单">☰</button>
+  </div>
+</header>
+
+<!-- 首屏 Banner -->
+<section class="hero" id="home">
+  <div class="wrap hero-inner">
+    <div>
+      <span class="hero-tag"><span class="dot"></span>2026年11月7日 · 今日已更新 38 部短剧</span>
+      <h1>茄子短视频 · <span>海量热门短剧在线追</span></h1>
+      <p class="lead">一个专注竖屏短剧与微短剧的内容聚合平台。茄子短视频把甜宠、逆袭、悬疑、古风等题材整理成清晰的分类榜单，帮你快速找到适合下饭、通勤或睡前放松的那一部。</p>
+      <p class="lead" style="margin-top:8px">无需复杂操作，从首页推荐到分类筛选，再到深度解析与追更日历，茄子短视频让每一次刷剧都更有方向感。</p>
+      <form class="hero-search" onsubmit="return false">
+        <input type="text" placeholder="试试搜：甜宠逆袭、古风悬疑、都市爽剧…" aria-label="快捷搜索">
+        <button type="button">搜索短剧</button>
+      </form>
+      <div class="hero-btns">
+        <a href="/#hot">🔥 热门短剧榜</a>
+        <a href="/#latest">🆕 最新更新</a>
+        <a href="/#category">📂 分类入口</a>
+        <a href="/#deep">📖 深度解析</a>
+        <a href="/#faq">❓ 常见问题</a>
+        <a href="/#news">📰 短剧资讯</a>
+        <a href="/#comment">💬 用户评论</a>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="poster"><span>霸总逆袭<br>全98集</span></div>
+      <div class="poster"><span>古风甜宠<br>已完结</span></div>
+      <div class="poster"><span>悬疑短剧<br>更新至32集</span></div>
+      <div class="poster"><span>都市爽剧<br>今日上线</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 快捷分类入口 -->
+<section class="sec" id="category">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>分类入口 · 按口味找短剧</h2>
+      <span class="sub">8 大题材方向，覆盖主流短剧消费场景</span>
+    </div>
+    <div class="cat-grid">
+      <a class="cat-item" href="/#hot"><span class="ico">💖</span>甜宠恋爱</a>
+      <a class="cat-item" href="/#hot"><span class="ico">🔥</span>逆袭爽剧</a>
+      <a class="cat-item" href="/#hot"><span class="ico">🕵️</span>悬疑推理</a>
+      <a class="cat-item" href="/#hot"><span class="ico">🏮</span>古风穿越</a>
+      <a class="cat-item" href="/#hot"><span class="ico">🏙️</span>都市职场</a>
+      <a class="cat-item" href="/#hot"><span class="ico">👨‍👩‍👧</span>家庭伦理</a>
+      <a class="cat-item" href="/#hot"><span class="ico">🧙</span>玄幻脑洞</a>
+      <a class="cat-item" href="/#hot"><span class="ico">😂</span>轻喜剧</a>
+    </div>
+  </div>
+</section>
+
+<!-- 热门推荐 -->
+<section class="sec" id="hot" style="padding-top:8px">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>热门短剧推荐 · 本周高热度</h2>
+      <a href="/#latest" class="more-link">查看全部更新 →</a>
+    </div>
+    <div class="grid-3">
+      <article class="card">
+        <div class="cover c1">逆光而来</div>
+        <h3>逆光而来：她从低谷翻盘</h3>
+        <div class="tags"><span class="tag">逆袭</span><span class="tag warm">都市</span><span class="tag">大女主</span></div>
+        <p class="desc">被夺走一切的林晚重回三年前，用一份被撕毁的合同开启复仇。节奏紧凑，每集都有反转，适合喜欢爽剧节奏的观众。</p>
+        <div class="meta"><span>热度 <b>98.2万</b></span><span>全86集</span></div>
+      </article>
+      <article class="card">
+        <div class="cover c2">小厨娘驾到</div>
+        <h3>小厨娘驾到：王爷请用膳</h3>
+        <div class="tags"><span class="tag">古风</span><span class="tag warm">甜宠</span><span class="tag">美食</span></div>
+        <p class="desc">现代厨神穿成王府粗使丫头，靠一手好菜征服挑剔王爷。轻喜甜宠，每集一道菜，下饭属性直接拉满。</p>
+        <div class="meta"><span>热度 <b>91.5万</b></span><span>更新至42集</span></div>
+      </article>
+      <article class="card">
+        <div class="cover c3">第七封来信</div>
+        <h3>第七封来信</h3>
+        <div class="tags"><span class="tag">悬疑</span><span class="tag warm">烧脑</span><span class="tag">短剧</span></div>
+        <p class="desc">每集一封神秘来信，指向七年前的旧案。竖屏构图配合紧凑剪辑，适合喜欢推理和反转的短剧观众。</p>
+        <div class="meta"><span>热度 <b>88.7万</b></span><span>更新至28集</span></div>
+      </article>
+      <article class="card">
+        <div class="cover c4">合租日记</div>
+        <h3>合租日记：室友是顶流</h3>
+        <div class="tags"><span class="tag">都市</span><span class="tag warm">轻喜</span><span class="tag">恋爱</span></div>
+        <p class="desc">普通社畜与隐藏身份的顶流合租，笑点密集又带点小心动。短剧节奏轻快，适合通勤路上刷几集。</p>
+        <div class="meta"><span>热度 <b>85.3万</b></span><span>全64集</span></div>
+      </article>
+      <article class="card">
+        <div class="cover c5">我在古代开外卖</div>
+        <h3>我在古代开外卖</h3>
+        <div class="tags"><span class="tag">穿越</span><span class="tag warm">脑洞</span><span class="tag">轻喜</span></div>
+        <p class="desc">外卖小哥一觉醒来成了古代驿站的伙计，用现代配送思路搅动京城。设定新鲜，梗多节奏快，适合放松观看。</p>
+        <div class="meta"><span>热度 <b>82.9万</b></span><span>更新至36集</span></div>
+      </article>
+      <article class="card">
+        <div class="cover c6">月光便利店</div>
+        <h3>月光便利店</h3>
+        <div class="tags"><span class="tag">治愈</span><span class="tag warm">群像</span><span class="tag">夜归人</span></div>
+        <p class="desc">深夜便利店里的每一位客人都带着自己的故事。短剧用温柔视角讲都市孤独，适合睡前慢慢看。</p>
+        <div class="meta"><span>热度 <b>79.4万</b></span><span>全48集</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 最新更新 -->
+<section class="sec" id="latest" style="background:linear-gradient(180deg,transparent,rgba(139,92,246,.04),transparent)">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>最新更新动态 · 追更不迷路</h2>
+      <span class="sub">截至 2026年11月7日 18:00</span>
+    </div>
+    <div class="update-list">
+      <div class="upd-item"><div class="upd-no">01</div><div><div class="t">逆光而来</div><div class="s">第79集上线：关键证据浮出水面</div></div><span class="time">10分钟前</span></div>
+      <div class="upd-item"><div class="upd-no">02</div><div><div class="t">小厨娘驾到</div><div class="s">第42集更新：王爷当众护妻</div></div><span class="time">32分钟前</span></div>
+      <div class="upd-item"><div class="upd-no">03</div><div><div class="t">第七封来信</div><div class="s">第28集上线：真凶身份再反转</div></div><span class="time">1小时前</span></div>
+      <div class="upd-item"><div class="upd-no">04</div><div><div class="t">合租日记</div><div class="s">全64集完结，番外篇预告放出</div></div><span class="time">2小时前</span></div>
+      <div class="upd-item"><div class="upd-no">05</div><div><div class="t">我在古代开外卖</div><div class="s">第36集更新：外卖大战正式打响</div></div><span class="time">3小时前</span></div>
+      <div class="upd-item"><div class="upd-no">06</div><div><div class="t">月光便利店</div><div class="s">第48集上线：大结局温暖收官</div></div><span class="time">4小时前</span></div>
+      <div class="upd-item"><div class="upd-no">07</div><div><div class="t">退婚后我成了首富</div><div class="s">新剧首播，一次性放出12集</div></div><span class="time">5小时前</span></div>
+      <div class="upd-item"><div class="upd-no">08</div><div><div class="t">深夜诊所</div><div class="s">第15集上线：隐藏病人登场</div></div><span class="time">6小时前</span></div>
+      <div class="upd-item"><div class="upd-no">09</div><div><div class="t">穿书后我靠吐槽保命</div><div class="s">第22集更新：名场面还原</div></div><span class="time">7小时前</span></div>
+      <div class="upd-item"><div class="upd-no">10</div><div><div class="t">她的第二人生</div><div class="s">第55集上线：母女和解线推进</div></div><span class="time">8小时前</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 深度解析 -->
+<section class="sec" id="deep">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>深度解析 · 茄子短视频的内容观察</h2>
+      <span class="sub">编辑视角下的短剧消费逻辑</span>
+    </div>
+    <div class="article-box">
+      <h3>短剧为什么越来越适合“碎片时间”</h3>
+      <p>茄子短视频所代表的竖屏短剧，本质上是对碎片化观看习惯的一次回应。单集时长通常控制在1到3分钟，剧情推进极快，几乎每一集都会抛出新的冲突或反转。与传统长剧需要铺陈世界观不同，短剧更看重“前三秒抓人、三十秒一个钩子”，这也解释了为什么茄子短视频上的热门内容往往在开头就给出强烈情绪：被误解、被夺走、被背叛，然后迅速进入反击或甜宠升温。</p>
+      <p>从内容分类来看，茄子短视频把短剧大致分为甜宠恋爱、逆袭爽剧、悬疑推理、古风穿越、都市职场、家庭伦理、玄幻脑洞和轻喜剧几大方向。甜宠类强调情绪价值和角色互动，适合通勤或睡前放松；逆袭类提供强烈的代入感，适合压力大时需要情绪出口的观众；悬疑类则更考验编剧的伏笔能力，适合愿意停下来反复推敲细节的短剧爱好者。</p>
+      <div class="quote">茄子短视频的编辑经验是：短剧好不好看，往往不取决于投资大小，而取决于“情绪浓度”和“信息密度”是否匹配目标观众。</div>
+      <h3>茄子短视频的推荐逻辑与内容筛选</h3>
+      <p>对于很多刚接触短剧的观众来说，最难的不是“看什么”，而是“从哪部开始”。茄子短视频用分类入口、热门榜、最新更新和深度解析四个维度来降低选择成本。热门榜反映近期讨论度，最新更新适合追更党，分类入口帮助观众按题材锁定兴趣，深度解析则补足背景信息，让观众在点开一部剧之前就能判断是否符合自己的口味。</p>
+      <p>在角色与人物分析层面，茄子短视频尤其关注“人物弧光”是否完整。一部优秀的短剧，即使只有几十集、每集几分钟，也能让主角经历从低谷到成长、从误会到和解的完整路径。观众在搜索茄子短视频相关推荐时，往往也在寻找“主角人设不崩”“反派有逻辑”“感情线不突兀”这类具体评价，因此页面中的角色标签和短评信息显得格外重要。</p>
+      <h3>节奏与消费体验：竖屏短剧的观看建议</h3>
+      <p>竖屏短剧的构图天然适合手机观看，特写多、字幕大、场景切换快。茄子短视频在呈现这类内容时，会优先考虑移动端的可读性，把剧名、集数、题材标签和更新状态放在显眼位置。对于喜欢一口气刷完的观众，可以优先选择已完结的短剧；对于享受追更讨论氛围的观众，则更适合从“最新更新”和“评论互动”进入，边看边参与讨论。</p>
+      <p>需要提醒的是，短剧节奏快也意味着信息密度高，连续刷剧容易疲劳。茄子短视频建议观众按题材轮换观看，比如甜宠和悬疑交替，既能保持新鲜感，也能减少同质化剧情带来的审美疲劳。如果您正在搜索“茄子短视频”相关内容，不妨先浏览分类入口，再从热门推荐中挑选一两部评价较稳定的作品试看。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 体验指南 -->
+<section class="sec" id="guide">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>体验指南 · 在茄子短视频里高效刷剧</h2>
+      <span class="sub">从首页到追更，一条清晰的浏览路径</span>
+    </div>
+    <div class="guide-grid">
+      <div class="guide-item"><div class="num">01</div><h4>先看分类再挑剧</h4><p>茄子短视频的分类入口按题材划分，先确定想看甜宠、逆袭还是悬疑，能大幅减少盲目点击。</p></div>
+      <div class="guide-item"><div class="num">02</div><h4>关注更新状态</h4><p>卡片上的“更新至X集”和“全X集”能帮你判断是追更还是补完，避免看到一半发现断更。</p></div>
+      <div class="guide-item"><div class="num">03</div><h4>移动端阅读友好</h4><p>页面针对手机浏览优化，剧名、标签和短评在窄屏下依然清晰，适合通勤路上快速浏览。</p></div>
+      <div class="guide-item"><div class="num">04</div><h4>用评论辅助决策</h4><p>用户评论里常出现对节奏、演技和结局的讨论，能帮助你在点开前形成基本预期。</p></div>
+      <div class="guide-item"><div class="num">05</div><h4>收藏与追更</h4><p>把感兴趣的短剧记下来，配合最新更新模块定期回看，追更不容易漏集。</p></div>
+      <div class="guide-item"><div class="num">06</div><h4>相关推荐扩展路径</h4><p>从一部剧延伸到同题材或同演员作品，茄子短视频的相关推荐能让浏览路径更顺畅。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec" id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>常见问题 · 关于茄子短视频</h2>
+      <span class="sub">6 个高频疑问，帮你快速上手</span>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item"><h4><span class="q">Q1</span>茄子短视频主要收录哪些类型的短剧？</h4><p>茄子短视频以竖屏微短剧为主，覆盖甜宠恋爱、逆袭爽剧、悬疑推理、古风穿越、都市职场、家庭伦理、玄幻脑洞和轻喜剧等方向。页面会按题材整理分类入口，方便观众按兴趣筛选，同时也保留热门榜和最新更新，兼顾不同观看习惯。</p></div>
+      <div class="faq-item"><h4><span class="q">Q2</span>第一次看短剧，应该从哪部开始？</h4><p>建议先从已完结、评价较稳定的作品入手，比如热度较高的甜宠或轻喜剧，单集时长短、理解成本低。茄子短视频的热门推荐卡片会标注集数和题材标签，可以先挑一部全剧完结的作品试看，确认自己对节奏和表演风格适应后，再尝试更新中的悬疑或逆袭类。</p></div>
+      <div class="faq-item"><h4><span class="q">Q3</span>页面上的“更新至X集”和“全X集”有什么区别？</h4><p>“更新至X集”表示该短剧仍在连载，后续会有新内容上线，适合喜欢追更和参与讨论的观众；“全X集”表示已经完结，可以一次性看完，更适合想快速补完或不喜欢等待的观众。茄子短视频在卡片和最新更新中都保留了这一信息，方便判断观看节奏。</p></div>
+      <div class="faq-item"><h4><span class="q">Q4</span>短剧和传统电视剧相比，观看体验有什么不同？</h4><p>短剧单集时长更短，剧情推进更快，冲突和反转更密集，通常更适合碎片时间观看。传统电视剧则更注重世界观铺陈和人物长线成长。茄子短视频的深度解析模块也提到，短剧的优势在于情绪浓度高，但连续观看时建议按题材轮换，避免同质化内容带来的疲劳感。</p></div>
+      <div class="faq-item"><h4><span class="q">Q5</span>如何判断一部短剧是否适合自己？</h4><p>可以从三个维度判断：一是题材标签是否符合口味，二是更新状态是否匹配你的追剧习惯，三是用户评论中对节奏、人设和结局的评价是否正面。茄子短视频的推荐卡片同时展示标签、简要看点和热度信息，配合评论区的真实反馈，能在点开前提供较完整的参考。</p></div>
+      <div class="faq-item"><h4><span class="q">Q6</span>茄子短视频的资讯和解析内容会持续更新吗？</h4><p>页面中的最新更新、推荐卡片、用户评论和短剧资讯都围绕近期内容动态整理，2026年11月7日的时间标记也说明信息具备时效性。茄子短视频会持续关注热门短剧的更新节奏和题材趋势，帮助观众在选剧时获得更清晰的判断依据。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 用户评论 -->
+<section class="sec" id="comment" style="background:linear-gradient(180deg,transparent,rgba(245,158,11,.05),transparent)">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>用户评论 · 真实追剧现场</h2>
+      <span class="sub">近 30 天社区短评精选</span>
+    </div>
+    <div class="comment-grid">
+      <div class="cmt"><div class="cmt-head"><div class="avatar av1">柚</div><div class="cmt-name">柚子汽水</div><span class="cmt-time">10-19</span></div><p>逆光而来真的太上头了，本来只想看两集，结果一口气刷到凌晨。女主反击那段太爽，节奏一点不拖。</p><div class="like"><span>👍 128</span><span>💬 12</span></div></div>
+      <div class="cmt"><div class="cmt-head"><div class="avatar av2">阿</div><div class="cmt-name">阿柴不吃糖</div><span class="cmt-time">10-21</span></div><p>小厨娘驾到的美食镜头拍得不错，但感情线有点慢热。适合吃饭的时候看，不用太动脑。</p><div class="like"><span>👍 86</span><span>💬 7</span></div></div>
+      <div class="cmt"><div class="cmt-head"><div class="avatar av3">七</div><div class="cmt-name">七号信使</div><span class="cmt-time">10-23</span></div><p>第七封来信看到第20集，伏笔回收得比预想中好。就是每集太短，等更新有点煎熬。</p><div class="like"><span>👍 152</span><span>💬 19</span></div></div>
+      <div class="cmt"><div class="cmt-head"><div class="avatar av4">柠</div><div class="cmt-name">柠檬不酸</div><span class="cmt-time">10-24</span></div><p>合租日记是我近期下饭首选，笑点自然，男女主互动也不油腻。完结了好舍不得。</p><div class="like"><span>👍 97</span><span>💬 5</span></div></div>
+      <div class="cmt"><div class="cmt-head"><div class="avatar av5">夜</div><div class="cmt-name">夜行动物</div><span class="cmt-time">10-25</span></div><p>茄子短视频的分类做得挺清楚，按题材找比乱翻省时间。希望以后能加上按演员筛选。</p><div class="like"><span>👍 64</span><span>💬 9</span></div></div>
+      <div class="cmt"><div class="cmt-head"><div class="avatar av6">小</div><div class="cmt-name">小满今天早睡</div><span class="cmt-time">10-27</span></div><p>月光便利店不是那种强冲突的短剧，但看得很舒服。深夜题材配温柔节奏，失眠的时候看正好。</p><div class="like"><span>👍 73</span><span>💬 4</span></div></div>
+      <div class="cmt"><div class="cmt-head"><div class="avatar av1">冬</div><div class="cmt-name">冬日限定</div><span class="cmt-time">10-28</span></div><p>我在古代开外卖的设定不错，但中段有点重复。如果能少几条支线，主线会更紧凑。</p><div class="like"><span>👍 41</span><span>💬 6</span></div></div>
+      <div class="cmt"><div class="cmt-head"><div class="avatar av2">芒</div><div class="cmt-name">芒果冰沙</div><span class="cmt-time">10-30</span></div><p>追更党表示最新更新模块很实用，一眼就能看到哪部剧更新了。希望更新频率再稳定一点。</p><div class="like"><span>👍 58</span><span>💬 3</span></div></div>
+      <div class="cmt"><div class="cmt-head"><div class="avatar av3">雾</div><div class="cmt-name">雾里看剧</div><span class="cmt-time">11-01</span></div><p>短剧看多了确实会审美疲劳，我现在甜宠和悬疑交替看，体验好很多。茄子短视频的分类入口帮了大忙。</p><div class="like"><span>👍 89</span><span>💬 11</span></div></div>
+      <div class="cmt"><div class="cmt-head"><div class="avatar av4">西</div><div class="cmt-name">西瓜味的风</div><span class="cmt-time">11-02</span></div><p>退婚后我成了首富刚上线就看了12集，节奏快是快，但有些转折略生硬。观望后续。</p><div class="like"><span>👍 36</span><span>💬 8</span></div></div>
+      <div class="cmt"><div class="cmt-head"><div class="avatar av5">南</div><div class="cmt-name">南巷旧人</div><span class="cmt-time">11-03</span></div><p>深度解析那篇写得挺实在，没有一味吹短剧，也提到连续刷容易疲劳，这点很真实。</p><div class="like"><span>👍 112</span><span>💬 6</span></div></div>
+      <div class="cmt"><div class="cmt-head"><div class="avatar av6">星</div><div class="cmt-name">星野拾光</div><span class="cmt-time">11-05</span></div><p>她的第二人生母女线演得不错，就是结局有点仓促。整体还是推荐的，适合喜欢家庭题材的。</p><div class="like"><span>👍 47</span><span>💬 5</span></div></div>
+      <div class="cmt"><div class="cmt-head"><div class="avatar av1">一</div><div class="cmt-name">一只小茄子</div><span class="cmt-time">11-06</span></div><p>茄子短视频这个名字挺可爱，页面看着也清爽。希望能多推一些悬疑短剧，最近甜宠有点多。</p><div class="like"><span>👍 69</span><span>💬 10</span></div></div>
+      <div class="cmt"><div class="cmt-head"><div class="avatar av2">半</div><div class="cmt-name">半糖去冰</div><span class="cmt-time">11-07</span></div><p>今天更新好多，准备把逆光而来剩下几集补完。追剧日历要是能提醒就更好了。</p><div class="like"><span>👍 33</span><span>💬 2</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 相关资讯 -->
+<section class="sec" id="news">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>短剧资讯 · 近期动态</h2>
+      <a href="/#latest" class="more-link">更多更新 →</a>
+    </div>
+    <div class="news-grid">
+      <article class="news-card"><div class="date">2026-11-07</div><h4>茄子短视频本周热度观察：逆袭题材继续领跑</h4><p>从近期数据看，逆袭爽剧在热度榜上占据优势，甜宠类紧随其后，悬疑短剧的讨论深度更高。</p></article>
+      <article class="news-card"><div class="date">2026-11-06</div><h4>《小厨娘驾到》更新至42集，感情线进入关键阶段</h4><p>该剧以美食和甜宠双线推进，最新几集开始收拢支线，观众关注度明显上升。</p></article>
+      <article class="news-card"><div class="date">2026-11-05</div><h4>悬疑短剧《第七封来信》凭反转收获口碑</h4><p>竖屏构图与紧凑剪辑结合，多集结尾留下钩子，适合喜欢推理的短剧观众。</p></article>
+      <article class="news-card"><div class="date">2026-11-04</div><h4>《合租日记》完结，轻喜剧短剧仍有稳定需求</h4><p>轻松恋爱线与日常笑点结合，说明短剧观众对“下饭内容”的需求依旧旺盛。</p></article>
+      <article class="news-card"><div class="date">2026-11-03</div><h4>短剧消费趋势：题材轮换观看成为新习惯</h4><p>不少观众开始交替观看不同题材，避免连续追同类内容带来的疲劳感。</p></article>
+      <article class="news-card"><div class="date">2026-11-02</div><h4>《月光便利店》温暖收官，治愈系短剧受关注</h4><p>以深夜便利店为舞台的群像短剧，用温柔视角关注都市夜归人，收获不少好评。</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- 页脚 -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="logo"><span class="mark">🍆</span>茄子<em style="color:#c4b5fd">短视频</em></div>
+        <p>专注竖屏短剧与微短剧的内容聚合专题页，提供分类入口、热门推荐、更新动态与深度观察，帮助观众更高效地发现值得看的短剧。</p>
+      </div>
+      <div class="foot-col"><h5>快速导航</h5><a href="/#hot">热门推荐</a><a href="/#latest">最新更新</a><a href="/#category">分类入口</a><a href="/#deep">深度解析</a></div>
+      <div class="foot-col"><h5>内容栏目</h5><a href="/#faq">常见问题</a><a href="/#comment">用户评论</a><a href="/#news">短剧资讯</a><a href="/#guide">体验指南</a></div>
+      <div class="foot-col"><h5>友情链接</h5><a href="#">短剧内容合作</a><a href="#">垂直内容社区</a><a href="#">内容目录占位</a><a href="#">站点导航占位</a></div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 茄子短视频内容专题 · 本站为内容聚合演示页面</span>
+      <span>更新日期：2026年11月7日</span>
+    </div>
+    <p class="disclaimer">免责声明：本页面为静态内容专题示例，所有短剧名称、推荐信息、评论与资讯均为模拟展示，仅用于页面结构与收录优化演示，不构成真实播放或购买建议。如需观看具体内容，请以实际平台信息为准。</p>
+  </div>
+</footer>
+
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</body>
+  </html>
